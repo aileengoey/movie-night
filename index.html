@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Night Registration</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="toast" class="hidden"></div>
+
+    <header>
+      <h1>🍿 Find Your Movie Night</h1>
+      <p>Isi data & dapat rekomendasi film</p>
+      <p class="intro-text">Bingung mau nonton apa malam ini? 🎬 Temukan rekomendasi film terbaik sesuai selera kamu dan simpan favoritmu di sini!</p>
+    </header>    
+
+    <main>
+      <form id="filmForm">
+        <fieldset>
+          <legend>Informasi Kontak</legend>
+          <label for="nama">Nama</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferensi Film</legend>
+          <label for="genre">Genre favorit</label>
+          <select id="genre" name="genre" multiple>
+            <option value="action">Action</option>
+            <option value="thriller">Thriller</option>
+            <option value="animation">Animation</option>
+            <option value="romance">Romance</option>
+            <option value="comedy">Comedy</option>
+          </select>
+
+          <label for="excitement">Seberapa excited?</label>
+          <input type="range" id="excitement" name="excitement" min="0" max="10" value="5" />
+          <span id="excitementValue">5</span>/10
+        </fieldset>
+
+        <input type="submit" value="Kirim Pendapatmu!" />
+
+        <!-- Dark Mode Toggle with SVG -->
+        <div id="themeToggleWrapper">
+          <button id="themeToggle" aria-label="Toggle Dark Mode">
+        <!-- icon akan diisi lewat JS -->
+          </button>
+          <span id="modeLabel">Mode Terang</span>
+        </div>
+
+      </form>
+
+      <section id="previewBox" style="display: none" aria-live="polite">
+        <h2>Preview Data:</h2>
+        <p><strong>Nama:</strong> <span id="previewnama"></span></p>
+        <p><strong>Email:</strong> <span id="previewEmail"></span></p>
+        <p><strong>Genre:</strong> <span id="previewGenre"></span></p>
+        <p><strong>Excitement:</strong> <span id="previewExcitement"></span>/10</p>
+        <button id="confirmBtn" type="button">Konfirmasi Kirim</button>
+      </section>
+
+      <section id="searchSection">
+        <h2>Cari Film Sendiri:</h2>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Ketik judul minimal 3 huruf…"
+        />
+      </section>
+
+      <div id="loading" style="display: none; text-align: center; margin-top: 1rem;">
+        <div class="loader"></div>
+      </div>      
+
+      <section id="recommendations" style="display: none;">
+        <h3>Rekomendasi Film:</h3>
+        <div id="movieList" class="movie-grid"></div>
+      </section>
+
+  
+    <!-- ❤️ Favorite Section -->
+    <section id="favorites" style="margin-top: 3rem; display: none;">
+        <h3>Film Favoritku:</h3>
+        <ul id="favoriteList"></ul>
+    </section>
+  
+    </main>
+
+    <!-- Modal Detail Film -->
+    <div id="modalDetail" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalPoster" src="" alt="" />
+        <p id="modalOverview"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
