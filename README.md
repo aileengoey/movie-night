@@ -1,58 +1,60 @@
 # 🍿 Movie Night
 
-Project sederhana untuk menemukan rekomendasi film berdasarkan genre favorit kamu!
+A simple project to discover movie recommendations based on your favorite genres!
 
-Dibuat menggunakan **HTML, CSS, dan JavaScript**, project ini memiliki fitur:
-- Form input pengguna (Nama, Email, Genre Favorit, Excitement Level)
-- Preview data sebelum submit
-- Fetch rekomendasi film berdasarkan genre dari **TMDB API**
-- Dark Mode dan Light Mode toggle
-- Cari film manual berdasarkan judul
-- Simpan film favorit ke **LocalStorage**
-- Modal untuk melihat detail film
-- Toast notification untuk interaksi user
-- Responsive untuk tampilan mobile dan desktop
+Built using **HTML, CSS, and JavaScript**, this project features:
+
+- User input form (Name, Email, Favorite Genre, Excitement Level)
+- Data preview before submission
+- Fetch movie recommendations by genre from TMDB API
+- Dark Mode and Light Mode toggle
+- Manual search for movies by title
+- Save favorite movies to LocalStorage
+- Modal popup for movie details
+- Toast notification for user interaction
+- Fully responsive for both desktop and mobile view
 
 ---
 
-## 🔗 Demo Project
+## 🔗 Live Demo
 
-👉 [Klik di sini untuk melihat live website!](https://aileengoey.github.io/movie-night/)
+👉 [Click here to view the live website!](https://aileengoey.github.io/movie-night/)
 
 ---
 
 ## 📸 Screenshots
 
-Berikut beberapa tampilan dari project Movie Night:
+Here are some previews from the Movie Night project:
 
 ---
 
-### 1. Form Pendaftaran Film
+### 1. Registration Form
 
-Tampilan awal untuk mengisi nama, email, genre favorit, dan tingkat excitement sebelum mencari rekomendasi film.
+Initial form where users fill in their name, email, favorite genres, and excitement level before searching for movies.
+
 
 ![Form Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162225.png?raw=true)
 
 ---
 
-### 2. Rekomendasi Film
+### 2. Movie Recommendations
 
-Setelah mengisi form, sistem akan menampilkan daftar film berdasarkan genre pilihan.
+After submitting the form, a list of movie recommendations based on selected genres will be displayed.
 
 ![Recommendation Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162455.png?raw=true)
 
 ---
 
-### 3. Detail Film (Modal)
+### 3. Movie Detail (Modal Popup)
 
-Saat pengguna mengklik poster film, akan muncul modal berisi sinopsis dan informasi detail film.
+Clicking on a movie poster will open a modal showing the movie's overview and additional information.
 
 ![Modal Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162558.png?raw=true)
 
 ---
 
 
-## 🛠️ Tools & Technology
+## 🛠️ Tools & Technology Used
 
 - HTML5
 - CSS3 (Flexbox, Responsive)
@@ -64,10 +66,10 @@ Saat pengguna mengklik poster film, akan muncul modal berisi sinopsis dan inform
 
 ## 🚀 Future Improvement
 
-- Menambahkan fitur pagination untuk rekomendasi film.
-- Sorting film berdasarkan rating atau tahun rilis.
-- Menambahkan filter skor minimal film.
-- Menambahkan animasi transisi saat beralih Dark Mode.
+- Add pagination for movie recommendations.
+- Add sorting features (by rating or release year).
+- Add minimum rating filters for better recommendation quality.
+- Add smooth animation transitions for dark mode toggling.
 
 ---
 
