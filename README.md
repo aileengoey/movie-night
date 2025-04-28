@@ -23,6 +23,7 @@ Built using **HTML, CSS, and JavaScript**, this project features:
 ---
 
 ## 📸 Screenshots
+*All screenshots were taken from the live deployed version.*
 
 Here are some previews from the Movie Night project:
 
@@ -56,8 +57,8 @@ Clicking on a movie poster will open a modal showing the movie's overview and ad
 
 ## 🛠️ Tools & Technology Used
 
-- HTML5
-- CSS3 (Flexbox, Responsive)
+- HTML5 & Responsive Web Design
+- CSS3 (Flexbox, Media Queries)
 - JavaScript (DOM Manipulation, Fetch API, LocalStorage)
 - TMDB (The Movie Database API)
 - GitHub Pages (Deployment)
@@ -66,16 +67,16 @@ Clicking on a movie poster will open a modal showing the movie's overview and ad
 
 ## 🚀 Future Improvement
 
-- Add pagination for movie recommendations.
-- Add sorting features (by rating or release year).
-- Add minimum rating filters for better recommendation quality.
-- Add smooth animation transitions for dark mode toggling.
+- Implement pagination for movie recommendations.
+- Implement sorting features (by rating or release year).
+- Implement rating filters for better recommendation.
+- Improve dark mode transition animations.
 
 ---
 
 ## 🙌 Author
 
-- Nama: **Aileen Felicia Goey**
+- Name: **Aileen Felicia Goey**
 - GitHub: [@aileengoey](https://github.com/aileengoey)
 
 ---
