@@ -21,11 +21,36 @@ Dibuat menggunakan **HTML, CSS, dan JavaScript**, project ini memiliki fitur:
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-![Movie Night Screenshot](link-screenshot-atau-bisa-upload-gambar-lainnya)
+Berikut beberapa tampilan dari project Movie Night:
 
 ---
+
+### 1. Form Pendaftaran Film
+
+Tampilan awal untuk mengisi nama, email, genre favorit, dan tingkat excitement sebelum mencari rekomendasi film.
+
+![Form Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162225.png?raw=true)
+
+---
+
+### 2. Rekomendasi Film
+
+Setelah mengisi form, sistem akan menampilkan daftar film berdasarkan genre pilihan.
+
+![Recommendation Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162455.png?raw=true)
+
+---
+
+### 3. Detail Film (Modal)
+
+Saat pengguna mengklik poster film, akan muncul modal berisi sinopsis dan informasi detail film.
+
+![Modal Screenshot](https://github.com/aileengoey/movie-night/blob/main/Screenshot%202025-04-28%20162558.png?raw=true)
+
+---
+
 
 ## 🛠️ Tools & Technology
 
@@ -37,12 +62,12 @@ Dibuat menggunakan **HTML, CSS, dan JavaScript**, project ini memiliki fitur:
 
 ---
 
-## 🚀 Future Improvement (optional)
+## 🚀 Future Improvement
 
-- Pagination rekomendasi film
-- Sorting berdasarkan rating/tahun rilis
-- Filter film berdasarkan skor rating
-- Animation transition untuk mode switch
+- Menambahkan fitur pagination untuk rekomendasi film.
+- Sorting film berdasarkan rating atau tahun rilis.
+- Menambahkan filter skor minimal film.
+- Menambahkan animasi transisi saat beralih Dark Mode.
 
 ---
 
