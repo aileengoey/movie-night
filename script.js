@@ -117,8 +117,8 @@ async function fetchMoviesByGenre(genres) {
     document.getElementById('recommendations').style.display = 'block';
   } 
   catch {
-    movieList.innerHTML = '<p style="text-align:center;">Gagal mengambil data film.</p>';
-    showToast('Failed to fetch movies. Please try again later.');
+    movieList.innerHTML = '<p style="text-align:center;">Failed to search for movies.</p>';
+    showToast('Failed to search for movies.');
   }  
   finally {
     document.getElementById('loading').style.display = 'none'; // Sembunyikan loading
@@ -138,8 +138,8 @@ async function searchMovies(query) {
     document.getElementById('recommendations').scrollIntoView({ behavior: 'smooth' });
   } 
   catch {
-    movieList.innerHTML = '<p style="text-align:center;">Gagal mencari film.</p>';
-    showToast('Gagal mencari film.');
+    movieList.innerHTML = '<p style="text-align:center;">No movies found.</p>';
+    showToast('No movies found.');
   }   
   finally {
     document.getElementById('loading').style.display = 'none'; // <-- hide loading
@@ -150,7 +150,7 @@ function renderMovies(movies) {
   movieList.innerHTML = '';
 
   if (movies.filter(m => m.vote_average >= 5.0).length === 0) {
-    movieList.innerHTML = '<p style="text-align:center; font-style:italic;">Film tidak ditemukan.</p>';
+    movieList.innerHTML = '<p style="text-align:center; font-style:italic;">No movies found.</p>';
     return;
   }
 
@@ -261,14 +261,14 @@ filmForm.addEventListener('submit', async e => {
   const excitement = excitementSlider.value;
 
   if (nama.length < 2) {
-    showToast('Nama minimal 2 karakter'); return;
+    showToast('Name must be at least 2 characters long.'); return;
   }
   const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (!emailPattern.test(email)) {
-    showToast('Format email tidak valid'); return;
+    showToast('Invalid email format'); return;
   }
   if (genre.length === 0) {
-    showToast('Pilih minimal 1 genre film favoritmu!');
+    showToast('Please select at least one favorite genre!');
     return;
   }
 
@@ -289,7 +289,7 @@ filmForm.addEventListener('submit', async e => {
 });
 
 confirmBtn.addEventListener('click', () => {
-  showToast('Terima kasih! Data kamu sudah dikirim.');
+  showToast('Thank you! Your data has been submitted.');
   previewBox.style.display = 'none';
   filmForm.reset();
   localStorage.clear();
@@ -305,7 +305,7 @@ function openModal(movie) {
   modalPoster.src = movie.poster_path
     ? `https://image.tmdb.org/t/p/w500${movie.poster_path}`
     : 'https://via.placeholder.com/300x450?text=No+Image';
-  modalOverview.textContent = movie.overview ? movie.overview : "Sinopsis tidak tersedia.";
+  modalOverview.textContent = movie.overview ? movie.overview : "Synopsis not available.";
 
   modal.style.display = 'block';
 }

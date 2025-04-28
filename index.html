@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movie Night Registration</title>
+    <title>Movie Night Finder</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,15 +12,15 @@
 
     <header>
       <h1>🍿 Find Your Movie Night</h1>
-      <p>Isi data & dapat rekomendasi film</p>
-      <p class="intro-text">Bingung mau nonton apa malam ini? 🎬 Temukan rekomendasi film terbaik sesuai selera kamu dan simpan favoritmu di sini!</p>
+      <p>Fill the form & get movie recommendations</p>
+      <p class="intro-text">Not sure what to watch tonight? 🎬 Find the best movie recommendations based on your preferences here!</p>
     </header>    
 
     <main>
       <form id="filmForm">
         <fieldset>
-          <legend>Informasi Kontak</legend>
-          <label for="nama">Nama</label>
+          <legend>Contact Information</legend>
+          <label for="nama">Name</label>
           <input type="text" id="nama" name="nama" required />
 
           <label for="email">Email</label>
@@ -29,7 +29,7 @@
 
         <fieldset>
           <legend>Preferensi Film</legend>
-          <label for="genre">Genre favorit</label>
+          <label for="genre">Favorite Genre</label>
           <select id="genre" name="genre" multiple>
             <option value="action">Action</option>
             <option value="thriller">Thriller</option>
@@ -38,38 +38,38 @@
             <option value="comedy">Comedy</option>
           </select>
 
-          <label for="excitement">Seberapa excited?</label>
+          <label for="excitement">How excited are you?</label>
           <input type="range" id="excitement" name="excitement" min="0" max="10" value="5" />
           <span id="excitementValue">5</span>/10
         </fieldset>
 
-        <input type="submit" value="Kirim Pendapatmu!" />
+        <input type="submit" value="Submit Your Preferences!" />
 
         <!-- Dark Mode Toggle with SVG -->
         <div id="themeToggleWrapper">
           <button id="themeToggle" aria-label="Toggle Dark Mode">
         <!-- icon akan diisi lewat JS -->
           </button>
-          <span id="modeLabel">Mode Terang</span>
+          <span id="modeLabel">Light Mode</span>
         </div>
 
       </form>
 
       <section id="previewBox" style="display: none" aria-live="polite">
-        <h2>Preview Data:</h2>
-        <p><strong>Nama:</strong> <span id="previewnama"></span></p>
+        <h2>Preview Your Data:</h2>
+        <p><strong>Name:</strong> <span id="previewnama"></span></p>
         <p><strong>Email:</strong> <span id="previewEmail"></span></p>
         <p><strong>Genre:</strong> <span id="previewGenre"></span></p>
         <p><strong>Excitement:</strong> <span id="previewExcitement"></span>/10</p>
-        <button id="confirmBtn" type="button">Konfirmasi Kirim</button>
+        <button id="confirmBtn" type="button">Confirm and Submit</button>
       </section>
 
       <section id="searchSection">
-        <h2>Cari Film Sendiri:</h2>
+        <h2>Search Your Own Movie:</h2>
         <input
           type="text"
           id="searchInput"
-          placeholder="Ketik judul minimal 3 huruf…"
+          placeholder="Type at least 3 letters of a movie title..."
         />
       </section>
 
@@ -78,14 +78,14 @@
       </div>      
 
       <section id="recommendations" style="display: none;">
-        <h3>Rekomendasi Film:</h3>
+        <h3>Movie Recommendations:</h3>
         <div id="movieList" class="movie-grid"></div>
       </section>
 
   
     <!-- ❤️ Favorite Section -->
     <section id="favorites" style="margin-top: 3rem; display: none;">
-        <h3>Film Favoritku:</h3>
+        <h3>My Favorite Movie:</h3>
         <ul id="favoriteList"></ul>
     </section>
   
